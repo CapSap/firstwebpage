@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <style>
-            body {
-                background-color: red;
-            }
+    
+    <style>
+        .column {
+            float: left;
+            width: 33.33%;
+            
+        }
+
+        .container {
+            grid-template-columns: 1fr 20px 20px;
+            background: grey;
+        }
         </style>
 
+    <body>
+        <header> 
+            Menu
+        </header>
+        <img src="https://images.pexels.com/photos/287229/pexels-photo-287229.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+        
 
         <h1>
-        Hello W!1234567
+        Hello World!
         </h1>
+        
+        <div class="row">
+            <div class="column"> col 1 </div>
+            <div class="column"> col 2 </div>
+            <div class="column"> col  </div>
+          </div> 
+        
+        
+        <div class="container">
+            <div class="c1">
+                C1 + maybe an image and some text?
+            </div>
+            <div class="c2">
+                C2
+            </div>
+            <div class="c3">
+                C3
+            </div>
+
+        </div>
+
+ 
+
+
 
         <script>
             // js goes here
