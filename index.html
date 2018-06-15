@@ -10,7 +10,6 @@
         }
         .men1 a {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
             color: white;
             font-size: 25px;
             text-decoration: none;
@@ -41,7 +40,21 @@
             letter-spacing: 15px;
             margin: 30px;;
         }
-        
+        .grid-cont-3col {
+            border: black;
+            border-style: solid;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+        .column {
+            border-style: solid;
+            text-align: center;
+            padding: 100px;
+            margin: 5%;
+        }
+               
+      
         
         </style>
 
@@ -62,6 +75,17 @@
             <h1 class="maintext">HELLO WORLD!</h1>
         </div>
 
+        <div class="grid-cont-3col">
+            <div class="column">
+                <p>Some text</p>                
+            </div>
+            <div class="column">
+                    <p>Some text</p>                
+                </div>
+            <div class="column">
+                <p>Some text</p>                
+            </div>
+        </div>
         
 
 
