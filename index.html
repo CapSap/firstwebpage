@@ -5,6 +5,7 @@
         body {
             margin: 0px;
         }
+        /* menu bar */
         .men1 {
             background-color: rgb(71, 71, 71);
         }
@@ -19,14 +20,14 @@
         .men1 :hover {
             background-color:yellowgreen;
         }
-
+        /* home image */
         .waterimg {
             width: 100%;
             height: auto
         }
-
+        /* Main text */
         .maintitle {
-            border-style: solid;
+            border-style: ;
             
         }
         .maintitle h1 {
@@ -40,18 +41,22 @@
             letter-spacing: 15px;
             margin: 30px;;
         }
+        /* 3 col style  */
         .grid-cont-3col {
-            border: black;
-            border-style: solid;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
 
         }
         .column {
-            border-style: solid;
             text-align: center;
-            padding: 100px;
-            margin: 5%;
+            margin: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background: white;
+        }
+
+        .col-text {
+            text-align: center;
+            padding: 10px 20px;
         }
                
       
@@ -68,7 +73,7 @@
         </header>
 
         <div>
-            <img class="waterimg" src="https://images.pexels.com/photos/355700/pexels-photo-355700.jpeg">
+            <img class="waterimg" src="https://images.pexels.com/photos/355700/pexels-photo-355700.jpeg" alt="water">
         </div>
 
         <div class="maintitle"> 
@@ -77,14 +82,24 @@
 
         <div class="grid-cont-3col">
             <div class="column">
-                <p>Some text</p>                
+                <img src="https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&h=350" alt="waterdrop" style="width: 100">
+                <div class="col-text">
+                    <p>Some text</p>
+                </div>
             </div>
             <div class="column">
-                    <p>Some text</p>                
+                    <img src="https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&h=350" alt="waterdrop" style="width: 100">
+                    <div class="col-text">
+                        <p>Some text</p>
+                    </div>
                 </div>
             <div class="column">
-                <p>Some text</p>                
+                <img src="https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&h=350" alt="waterdrop" style="width: 100">
+                <div class="col-text">
+                    <p>Some text</p>
+                </div>
             </div>
+         
         </div>
         
 
