@@ -23,7 +23,8 @@
         /* home image */
         .waterimg {
             width: 100%;
-            height: auto
+            height: auto;
+            display: none;
         }
         /* Main text */
         
@@ -70,6 +71,7 @@
 
         <div>
             <img class="waterimg" src="https://images.pexels.com/photos/355700/pexels-photo-355700.jpeg" alt="water">
+            <img class="waterimg" src="https://images.pexels.com/photos/9198/nature-sky-twilight-grass-9198.jpg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="tree">
         </div>
 
         <div class="maintitle"> 
@@ -95,14 +97,16 @@
             </div>
          
         </div>
-        
-
-
-
-
-
+            
         <script>
             // js goes here
+            var x = document.getElementsByClassName('waterimg');
+            var n = 0;
+            x[n].style.display = "block";
+
+            console.log(x[n].style);
+    
+            
         </script>
     </body>
 </html>
