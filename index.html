@@ -100,9 +100,24 @@
             
         <script>
             // js goes here
-            var x = document.getElementsByClassName('waterimg');
-            var n = 0;
-            x[n].style.display = "block";
+            var indexToComp = 0;
+            autoscroll();
+            
+            
+            function autoscroll() {
+                var x = document.getElementsByClassName('waterimg');
+                var n = 0;
+                x[n].style.display = "block";
+
+                for (; n < x.length; n++) {
+                    x[n].style.display = "none";
+
+                }
+                indexToComp++;
+                if (indexToComp>x.length) {indexToComp = 0}
+
+
+            }
 
             console.log(x[n].style);
     
