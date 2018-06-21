@@ -23,8 +23,9 @@
         /* home image */
         .waterimg {
             width: 100%;
-            height: auto;
+            height: 500px;
             display: none;
+                        
         }
         /* Main text */
         
@@ -98,30 +99,31 @@
          
         </div>
             
-        <script>
+       <script> 
             // js goes here
-            var indexToComp = 0;
-            autoscroll();
-            
-            
-            function autoscroll() {
-                var x = document.getElementsByClassName('waterimg');
-                var n = 0;
-                x[n].style.display = "block";
+            var myIndex = 0
+            auto();
 
-                for (; n < x.length; n++) {
-                    x[n].style.display = "none";
-
+            function auto() {              
+            
+                var i;
+                var x = document.getElementsByClassName("waterimg");
+                
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                        }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                
+                x[myIndex-1].style.display = "block";  
+                setTimeout(auto, 2000); // Change image every 2 seconds
                 }
-                indexToComp++;
-                if (indexToComp>x.length) {indexToComp = 0}
 
-
-            }
-
-            console.log(x[n].style);
+            
+            
     
             
         </script>
+
     </body>
 </html>
