@@ -130,13 +130,17 @@
         // js goes here
    
 
-
+        function changeOpacity() {
 
         var opac;
+        var y = document.getElementsByClassName("testimg");
 
-        for (opac = 0; opac < 1; opac = opac + 0.1, setTimeout(auto, 200)) {
-            testimg.style.opacity = op;
+        for (opac = 0; opac < 1; opac = opac + 0.1) {
+            setTimeout(y[0].style.opacity = opac, 200);
         }
+    }
+
+    changeOpacity();
 
 
 
